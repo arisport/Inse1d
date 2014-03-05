@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WBT Charts</title>
+    <link rel="stylesheet" type="text/css" href="wbt.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../scripts/wbt.js"></script>
+</head>
+<body>
+	<?php
+	// Create connection
+	$con=mysqli_connect("localhost","inse1dfdf_wbt","{)Q5$#GioV.y","inse1d_wbt");
+	
+	// Check connection
+	if (mysqli_connect_errno())
+	  {
+	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	  }
+	?>  
+	<h1 class="title">INSE 1d - WBT Graph</h1>
+    <section>
+        <article>
+            <div class="wbtBlock">
+                <h1><input type="text" class="wbtTitle" value="WBT Title go to here"/></h1>
+                <div class="graphBlock">
+                	<div class="task">
+                	<h2><input type="text" class="wbtTaskTitleTop" value="First task title"/></h2>
+                	</div>
+                	<button class="newGraphBlock">Insert Task</button>
+                	<p><span><textarea type="textarea" class="wbtNote" cols="30" rows="10" value="Notes to go here">Notes to go here</textarea></span></p>
+                </div>
+            </div> 
+        </article>
+    </section>
+    <button class="newBlock">Save and New</button>
+    <a href="/">Back to homepage</a>
+</body>

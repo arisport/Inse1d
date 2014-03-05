@@ -1,0 +1,16 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+	margin-bottom: 15px;
+	border: 1px solid grey;
+	padding: 15px;
+}
+
+.task {
+	display:inline-block;
+	border: 1px solid #333;
+	padding: 10px;
+	margin-right: 40px;
+}
